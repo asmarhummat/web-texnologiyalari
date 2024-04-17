@@ -1,0 +1,473 @@
+:root{
+    --main-color: #ccaa6b;
+    --black-color: #0e0e0e;
+    --border: solid rgba(255, 255, 255)
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+        transition: 0.2s ease;
+}
+/*capitalize yazdiq cunki isteyirik ki herflerimiz bir boyuk bir kicik olsun
+uppercase - boyuk -- lovercase kicik*/
+
+body{
+    background-color: var(--main-color);
+}
+/* burda esas meqsed o ortaya yazdigimiz yazilari biraz qiraga verek sola yapisiq olmasin*/
+section {
+    padding: 3.5rem 7%;
+}
+
+/*indi sifaris ver butonunu duzeldirik*/
+
+.button {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 3.20rem;
+    border-radius: 30rem;
+    font-size: 1rem;
+    color: white;
+    background-color: brown;
+    cursor: pointer;
+}
+
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+/* arxa fondur - rootla esas telimleri vermisdik*/
+
+  body{
+    background-color: var(--main-color);
+    height: 200vh;
+  }
+
+  /* burda biz yeni kitablar sozunu yaziriq*/
+  .heading {
+    color: rgb(214, 145, 55);
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid white;
+
+}
+
+.heading span{
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+ 
+  /* header start */
+.header .logo img{
+    height: 7rem;
+}
+
+.header {
+    background-color: rgb(240, 197, 116);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* scroll acdiq height 7rem ile sonra sticky eledik ki bizimle gelsin yuxaridaki
+navbar top0 da verdik bunun ucun, zindex 1000 de ona gore verik ki
+onun onunu nese baglamasin*/
+
+
+/* biz artiq navbarlari seliqeye saliriq ona gore navbar a etiketi yazdiq*/
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+}
+ /* header end */
+
+ /*0.1 rem yeni 1 pxel demekdi. 10 a vururuq. 1pxl=0.1rem*/
+
+ /* home start */
+
+.home {
+    min-height: 100vh;
+    background: url(WhatsApp\ Image\ 2024-04-14\ at\ 14.01.32.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(2, 0, 0);
+}
+
+  /* home  end
+  6rem yeni 60px  */
+
+
+  /*menu start*/
+    .menu .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    }
+/*nurda biz artiq yeni kitablarin asagisindaki buttonlari duzeldirik*/
+    .menu .box-container .box{
+        padding: 3rem;
+        background-color: #f1e8d6;
+        border-radius: 3rem;
+        background-color: #f1e8d6 ;
+        min-height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+.menu .box-container .box img{
+    width: 40%;
+    object-fit: cover;
+}
+
+.menu .box-container .box .menu-category{
+    font-size: 1.2rem;
+}
+
+.menu .box-container .box h3{
+    font-size: 1rem;
+    padding: 1.5rem o;
+}
+
+.menu .box-container .box .price{
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+/*menu end*/
+
+
+
+
+
+
+
+
+.buttons button:nth-child(2) {
+       border:1px solid #8E24AA !important;
+       background-color:#8E24AA;
+       color:#fff;
+        height:40px;
+}
+.payment-info {
+    background: blue;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .product-details {
+    padding: 10px;
+  }
+  
+  body {
+    background: #eee;
+  }
+  
+  .cart {
+    background: #fff;
+  }
+  
+  .p-about {
+    font-size: 12px;
+  }
+  
+  .table-shadow {
+    -webkit-box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
+    box-shadow: 5px 5px 15px -2px rgba(0,0,0,0.42);
+  }
+  
+  .type {
+    font-weight: 400;
+    font-size: 10px;
+  }
+  
+  label.radio {
+    cursor: pointer;
+  }
+  
+  label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  label.radio span {
+    padding: 1px 12px;
+    border: 2px solid #ada9a9;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+  }
+  
+  label.radio input:checked + span {
+    border-color: #fff;
+    background-color: blue;
+    color: #fff;
+  }
+  
+  .credit-inputs {
+    background: rgb(102,102,221);
+    color: #fff !important;
+    border-color: rgb(102,102,221);
+  }
+  
+  .credit-inputs::placeholder {
+    color: #fff;
+    font-size: 13px;
+  }
+  
+  .credit-card-label {
+    font-size: 9px;
+    font-weight: 300;
+  }
+  
+  .form-control.credit-inputs:focus {
+    background: rgb(102,102,221);
+    border: rgb(102,102,221);
+  }
+  
+  .line {
+    border-bottom: 1px solid rgb(102,102,221);
+  }
+  
+  .information span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .information {
+    margin-bottom: 5px;
+  }
+  
+  .items {
+    -webkit-box-shadow: 5px 5px 4px -1px rgba(0,0,0,0.25);
+    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08);
+  }
+  
+  .spec {
+    font-size: 11px;
+  }
+
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 30rem;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+* {box-sizing: border-box}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 30rem;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 20%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  cursor: pointer;
+  width: 10rem;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  width: 10rem;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  border-radius: 30rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+  border-radius: 30rem;
+}
+
+/* text inside the vertical line */
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 30rem;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  
+  text-align: center;
+  background-color: #666;
+  border-radius: 30rem;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+    border-radius: 30rem;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+    border-radius: 30rem;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+    border-radius: 30rem;
+  }
+
+}
